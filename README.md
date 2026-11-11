@@ -42,6 +42,11 @@ formatted dept-coll#-access-######_folder title
 The default is to start the 6-digit sequential number at 1,
 but a different number can be included as an optional third argument if there are other access copies.
 
+WARNING: if the folder title has punctuation early in the title (e.g., T-HUD), 
+it can cause alphabetization differences between the ArchivesSpace import spreadsheet and the directory.
+This will result in the sequential numbers not matching between what this script generates and what is in ArchivesSpace.
+Either check and rename the folders as needed to match ArchivesSpace, or use a different method to add the ids to the folder titles.
+
 ### metadata-csv
 
 Script usage: `python /path/to/script /path/to/aips_directory collection_id [er_number]`
